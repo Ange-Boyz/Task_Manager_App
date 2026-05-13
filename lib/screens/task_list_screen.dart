@@ -289,21 +289,24 @@ class _TaskListScreenState extends State<TaskListScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (_) =>
-                                      TaskDetailScreen(
-                                    task: task,
-                                    onDelete: () {
-                                      setState(() {
-                                        tasks.remove(task);
-                                      });
-                                    },
-                                    onToggle: () {
-                                      setState(() {
-                                        task.isCompleted =
-                                            !task
-                                                .isCompleted;
-                                      });
-                                    },
-                                  ),
+                                          TaskDetailScreen(
+                                        task: task,
+                                        onDelete: () {
+                                          setState(() {
+                                            tasks.remove(task);
+                                          });
+                                        },
+                                        onToggle: () {
+                                          setState(() {
+                                            task.isCompleted = !task.isCompleted;
+                                          });
+                                        },
+                                        onEdit: (updatedTask) {
+                                          setState(() {
+                                            // task is updated in place; rebuild list
+                                          });
+                                        },
+                                      ),
                                 ),
                               );
                             },
