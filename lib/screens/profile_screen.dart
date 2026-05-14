@@ -34,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
                           radius: 44,
                           backgroundColor: const Color(0xFFFFB84D),
                           child: const Text(
-                            "AB",
+                            "TAC",
                             style: TextStyle(
                               fontSize: 28,
                               color: Colors.white,
@@ -48,7 +48,7 @@ class ProfileScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
                               Text(
-                                "Your Full Name",
+                                "Tchomakam Ange Cabrel",
                                 style: TextStyle(
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class ProfileScreen extends StatelessWidget {
                               ),
                               SizedBox(height: 6),
                               Text(
-                                "Student ID: SE12345",
+                                "LMUI250967",
                                 style: TextStyle(color: Colors.black54),
                               ),
                               SizedBox(height: 4),
@@ -92,15 +92,15 @@ class ProfileScreen extends StatelessWidget {
                                       children: [
                                         TextField(
                                           controller: nameController,
-                                          decoration: const InputDecoration(labelText: "Full name"),
+                                          decoration: const InputDecoration(labelText: "Tchomakam Ange Cabrel"),
                                         ),
                                         TextField(
                                           controller: idController,
-                                          decoration: const InputDecoration(labelText: "Student ID"),
+                                          decoration: const InputDecoration(labelText: "LMUI250967"),
                                         ),
                                         TextField(
                                           controller: deptController,
-                                          decoration: const InputDecoration(labelText: "Department"),
+                                          decoration: const InputDecoration(labelText: "Software Engineering"),
                                         ),
                                         TextField(
                                           controller: bioController,
